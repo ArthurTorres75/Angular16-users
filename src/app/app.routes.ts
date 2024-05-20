@@ -14,5 +14,5 @@ export const APP_ROUTES: Routes = [
   { path: 'account/register', component: RegisterComponent },
 
   // otherwise redirect to home
-  { path: '**', redirectTo: '', pathMatch: 'full' },
+  { path: '**', redirectTo: '' },
 ];

@@ -1,6 +1,6 @@
 import { NgIf } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterLinkActive, RouterOutlet } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { User } from '@app/_models';
 import { AccountService } from '@app/_services';
 import { AlertComponent } from './_components';
@@ -9,7 +9,7 @@ import { AlertComponent } from './_components';
   selector: 'app-root',
   templateUrl: './app.component.html',
   standalone: true,
-  imports: [NgIf, RouterOutlet, RouterLinkActive, AlertComponent],
+  imports: [NgIf, RouterOutlet, RouterLink, RouterLinkActive, AlertComponent],
 })
 export class AppComponent {
   user?: User | null;
